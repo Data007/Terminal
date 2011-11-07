@@ -1,16 +1,12 @@
-#include <unistd.h>
-#include <iostream>
-#include <string>
-using namespace std;
+#include<stdio.h>
+#include<readline/readline.h>
+#include<readline/history.h>
 
-int main(int argc, char *argv[])
-{
-  int chdir('/Users/brian/');
 
-  if (chdir != -1)
-  {
-    cout << "it worked" << endl;
-  }
+int main(){
 
-  return 0;
+   char* asdf = readline(":");
+   printf("You entered: %s\n", asdf);
+   //free(asdf);
+   return 0;
 }
